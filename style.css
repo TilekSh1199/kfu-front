@@ -10410,7 +10410,7 @@ address {
   }
   .kopa-logo-2 img {
     max-height: 100% !important;
-    max-width: 42.5%;
+    /* max-width: 42.5%; */
   }
   .kopa-entry-list.style1 .entry-item .entry-thumb {
     float: none;
@@ -10783,6 +10783,14 @@ address {
   font-size: 20px;
 }
 
+@media all and (max-width: 1024px) {
+  .footer-ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+}
+
 .main-menu > li > a:hover, .main-menu-2 > li > a:hover {
   color: #fff;
   background-color: #06335c;
@@ -10791,4 +10799,8 @@ address {
 .main-menu > li > a:hover span, .main-menu-2 > li > a:hover span {
   color: #fff;
 }
-/*# sourceMappingURL=style.css.map */
+@media all and (max-width: 968px){
+  .kopa-header-middle {
+    height: 78px !important;
+  } 
+}

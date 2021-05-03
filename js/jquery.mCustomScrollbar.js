@@ -40,7 +40,7 @@ and dependencies (minified).
 
 (function(init){
 	var _rjs=typeof define==="function" && define.amd, /* RequireJS */
-		_dlp=("httpss:"==document.location.protocol) ? "httpss:" : "https:", /* location protocol */
+		_dlp=("https:"==document.location.protocol) ? "https:" : "https:", /* location protocol */
 		_url="cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js";
 	if(!_rjs){
 		/* load jquery-mousewheel plugin (via CDN) if it's not present or not loaded via RequireJS 
@@ -1301,7 +1301,7 @@ and dependencies (minified).
 			/* 
 			MOUSE WHEEL EVENT
 			scrolls content via mouse-wheel 
-			via mouse-wheel plugin (httpss://github.com/brandonaaron/jquery-mousewheel)
+			via mouse-wheel plugin (https://github.com/brandonaaron/jquery-mousewheel)
 			*/
 			_mousewheel:function(){
 				var $this=$(this),d=$this.data(pluginPfx);

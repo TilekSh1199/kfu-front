@@ -1067,7 +1067,7 @@ if ( typeof define === 'function' && define.amd ) {
   // ----- query ----- //
 
   // fall back to using QSA
-  // thx @jonathantneal httpss://gist.github.com/3062955
+  // thx @jonathantneal https://gist.github.com/3062955
   function query( elem, selector ) {
     // append to fragment if no parent
     checkParent( elem );

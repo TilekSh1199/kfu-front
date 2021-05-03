@@ -1,9 +1,9 @@
 /*
  * jQuery Navgoco Menus Plugin v0.1.5 (2013-09-07)
- * httpss://github.com/tefra/navgoco
+ * https://github.com/tefra/navgoco
  *
  * Copyright (c) 2013 Chris T (@tefra)
- * BSD - httpss://github.com/tefra/navgoco/blob/master/LICENSE-BSD
+ * BSD - https://github.com/tefra/navgoco/blob/master/LICENSE-BSD
  */
 (function($) {
 
