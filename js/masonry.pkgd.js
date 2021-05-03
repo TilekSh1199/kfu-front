@@ -1,14 +1,14 @@
 /*!
  * Masonry PACKAGED v3.1.2
  * Cascading grid layout library
- * http://masonry.desandro.com
+ * https://masonry.desandro.com
  * MIT License
  * by David DeSandro
  */
 
 /*!
  * getStyleProperty by kangax
- * http://perfectionkills.com/feature-testing-css-properties/
+ * https://perfectionkills.com/feature-testing-css-properties/
  */
 
 /*jshint browser: true, strict: true, undef: true */
@@ -1067,7 +1067,7 @@ if ( typeof define === 'function' && define.amd ) {
   // ----- query ----- //
 
   // fall back to using QSA
-  // thx @jonathantneal https://gist.github.com/3062955
+  // thx @jonathantneal httpss://gist.github.com/3062955
   function query( elem, selector ) {
     // append to fragment if no parent
     checkParent( elem );
@@ -1155,7 +1155,7 @@ function isEmptyObj( obj ) {
   return true;
 }
 
-// http://jamesroberts.name/blog/2010/02/22/string-functions-for-javascript-trim-to-camel-case-to-dashed-and-to-underscore/
+// https://jamesroberts.name/blog/2010/02/22/string-functions-for-javascript-trim-to-camel-case-to-dashed-and-to-underscore/
 function toDash( str ) {
   return str.replace( /([A-Z])/g, function( $1 ){
     return '-' + $1.toLowerCase();
@@ -1422,7 +1422,7 @@ Item.prototype._transition = function( args ) {
   // set from styles
   if ( args.from ) {
     this.css( args.from );
-    // force redraw. http://blog.alexmaccaw.com/css-transitions
+    // force redraw. https://blog.alexmaccaw.com/css-transitions
     var h = this.element.offsetHeight;
     // hack for JSHint to hush about unused var
     h = null;
@@ -1690,7 +1690,7 @@ function makeArray( obj ) {
   return ary;
 }
 
-// http://stackoverflow.com/a/384380/182183
+// https://stackoverflow.com/a/384380/182183
 var isElement = ( typeof HTMLElement === 'object' ) ?
   function isElementDOM2( obj ) {
     return obj instanceof HTMLElement;
@@ -1719,7 +1719,7 @@ function removeFrom( obj, ary ) {
   }
 }
 
-// http://jamesroberts.name/blog/2010/02/22/string-functions-for-javascript-trim-to-camel-case-to-dashed-and-to-underscore/
+// https://jamesroberts.name/blog/2010/02/22/string-functions-for-javascript-trim-to-camel-case-to-dashed-and-to-underscore/
 function toDashed( str ) {
   return str.replace( /(.)([A-Z])/g, function( match, $1, $2 ) {
     return $1 + '-' + $2;
@@ -2294,7 +2294,7 @@ Outlayer.prototype.unbindResize = function() {
 };
 
 // original debounce by John Hann
-// http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+// https://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
 
 // this fires every resize
 Outlayer.prototype.onresize = function() {
@@ -2630,7 +2630,7 @@ if ( typeof define === 'function' && define.amd ) {
 /*!
  * Masonry v3.1.2
  * Cascading grid layout library
- * http://masonry.desandro.com
+ * https://masonry.desandro.com
  * MIT License
  * by David DeSandro
  */
