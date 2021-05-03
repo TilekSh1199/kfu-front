@@ -1,0 +1,1332 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<title>Fit Sport theme Responsive HTML5 template documentation</title>
+	<!-- Framework CSS -->
+<link rel="stylesheet" href="style.css" media="screen" />
+<link href="assets/src/prettify.css" type="text/css" rel="stylesheet" />
+    <script src="assets/src/prettify.js" type="text/javascript"></script>
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:10px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+	<h1 align="center">&ldquo;Fit Sport theme - Responsive HTML5 template&rdquo;</h1>
+	<p class="subtitle">Created: 02 / Dec / 2014<br>
+					By: KOPATHEME<br>
+					Email: <a href="mailto:kopatheme@gmail.com">kopatheme@gmail.com</a><br>
+					Website: <a href="http://kopatheme.com">http://kopatheme.com</a><br>
+					Support: <a href="http://kopatheme.com/forum">http://kopatheme.com/forum</a></p>
+	<div class="separater"></div>
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>			
+		</ol>
+		<div class="separater"></div>
+</div>
+<div class="wrapper">
+<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+<h5>A. 1.1) Home page</h5>
+<p>Home page is divided into following main parts: </p>
+		<ol>
+			<li><strong>.kopa-page-header</strong></li>
+            <li><strong>#main-content</strong></li>
+            <li><strong>.bottom-sidebar</strong></li>
+            <li><strong>#kopa-footer</strong></li>
+         </ol>
+		<p>Here is the general structure.</p>
+		<pre class="prettyprint lines">
+
+
+&ltbody class="kopa-home-page"&gt
+
+    &ltheader class="kopa-header"&gt
+
+        &ltdiv class="kopa-header-top"&gt  
+
+            &ltdiv class="wrapper"&gt
+
+                &ltdiv class="header-top-left"&gt
+                    
+                    [User]
+
+                    [Social Links]
+
+                &lt/div&gt 
+                &lt!-- header-top-left --&gt  
+
+                &ltdiv class="header-top-right"&gt
+
+                    [Header Top List]
+
+                    [Search Box]
+
+                &lt/div&gt
+               &lt!-- header-top-right --&gt   
+
+            &lt/div&gt  
+            &lt!-- wrapper --&gt
+
+        &lt/div&gt
+        &lt!-- kopa-header-top --&gt
+
+        &ltdiv class="kopa-header-middle"&gt
+
+            &ltdiv class="wrapper"&gt
+
+                [Logo]
+
+                [Main Menu]
+
+            &lt/div&gt
+            &lt!-- wrapper --&gt
+
+        &lt/div&gt
+        &lt!-- kopa-header-middle --&gt
+
+        &ltdiv class="kopa-header-bottom"&gt
+
+            &ltdiv class="wrapper"&gt
+
+                [Secondary Menu]
+                
+            &lt/div&gt
+            &lt!-- wrapper --&gt
+
+        &lt/div&gt
+        &lt!-- kopa-header-bottom --&gt
+
+    &lt/header&gt
+    &lt!-- kopa-page-header --&gt
+
+    &ltdiv id="main-content"&gt
+
+        &ltdiv class="wrapper mb-30"&gt
+
+            &ltdiv class="widget-area-1"&gt
+
+                [Widget]
+            
+            &lt/div&gt
+            &lt!-- widget-area-1 --&gt
+        
+        &lt/div&gt
+        &lt!-- wrapper --&gt
+
+        &ltdiv class="wrapper"&gt
+
+            &ltdiv class="main-top"&gt
+
+                [Ticker]
+
+                [Social Links]
+
+            &lt/div&gt
+            &lt!-- main-top --&gt
+
+            &ltdiv class="content-wrap"&gt
+
+                &ltdiv class="row"&gt
+
+                    &ltdiv class="kopa-main-col"&gt
+
+                        &ltdiv class="widget-area-2"&gt
+
+                            [Widget]
+                        
+                        &lt/div&gt
+                        &lt!-- widget-area-2 --&gt
+
+                        &ltdiv class="row"&gt
+                        
+                            &ltdiv class="widget-area-3 col-md-6 col-sm-6 col-xs-6"&gt
+
+                                [Widget] 
+                        
+                            &lt/div&gt
+                            &lt!-- widget-area-3 --&gt
+
+                            &ltdiv class="widget-area-4 col-md-6 col-sm-6 col-xs-6"&gt
+
+                                [Widget] 
+                        
+                            &lt/div&gt
+                            &lt!-- widget-area-4 --&gt
+                        
+                        &lt/div&gt
+                        &lt!-- row --&gt 
+
+                        &ltdiv class="widget-area-5"&gt
+
+                            [Widget]
+                        
+                        &lt/div&gt
+                        &lt!-- widget-area-5 --&gt
+
+                        &ltdiv class="row"&gt
+                        
+                            &ltdiv class="widget-area-6 col-md-6 col-sm-6 col-xs-6"&gt
+
+                                [Widget]
+                        
+                            &lt/div&gt
+                            &lt!-- widget-area-6 --&gt
+
+                            &ltdiv class="widget-area-7 col-md-6 col-sm-6 col-xs-6"&gt
+
+                                [Widget] 
+                        
+                            &lt/div&gt
+                            &lt!-- widget-area-7 --&gt
+                        
+                        &lt/div&gt
+                        &lt!-- row --&gt 
+
+                    &lt/div&gt
+                    &lt!-- main-col --&gt
+
+                    &ltdiv class="sidebar widget-area-11"&gt
+
+                        [Widget]
+
+                        [Widget]
+
+                        ...
+
+                    &lt/div&gt
+                    &lt!-- sidebar --&gt
+
+                &lt/div&gt
+                &lt!-- row --&gt
+
+                &ltdiv class="row"&gt
+                
+                    &ltdiv class="widget-area-8 col-md-4 col-sm-4 col-xs-4"&gt
+
+                        [Widget]
+                
+                    &lt/div&gt
+                    &lt!-- widget-area-8  --&gt
+
+                    &ltdiv class="widget-area-9 col-md-4 col-sm-4 col-xs-4"&gt
+
+                        [Widget]
+                
+                    &lt/div&gt
+                    &lt!-- widget-area-9  --&gt
+
+                    &ltdiv class="widget-area-10 col-md-4 col-sm-4 col-xs-4"&gt
+
+                        [Widget]
+                
+                    &lt/div&gt
+                    &lt!-- widget-area-10  --&gt
+                
+                &lt/div&gt
+                &lt!-- row --&gt 
+            &lt/div&gt
+            &lt!-- content-wrap --&gt
+
+            &ltsection class="kopa-area kopa-area-1 mb-30"&gt
+
+                &ltspan class="t1"&gt&lt/span&gt
+                &ltspan class="t2"&gt&lt/span&gt
+
+                &ltdiv class="content-wrap"&gt
+
+                    &ltdiv class="row"&gt
+                    
+                        &ltdiv class="widget-area-12"&gt
+
+                            [Widget]
+                        
+                        &lt/div&gt
+                        &lt!-- widget-area-12 --&gt
+
+                        &ltdiv class="widget-area-13"&gt
+
+                            [Widget] 
+                        
+                        &lt/div&gt
+                        &lt!-- widget-area-13 --&gt
+                    
+                    &lt/div&gt
+                    &lt!-- row --&gt 
+
+                &lt/div&gt
+                
+            &lt/section&gt
+            &lt!-- kopa-area-1 --&gt
+
+            &ltdiv class="content-wrap"&gt
+
+                &ltdiv class="widget-area-14"&gt
+
+                    [Widget]
+                
+                &lt/div&gt
+                &lt!-- widget-area-14 --&gt
+
+            &lt/div&gt
+
+            &ltsection class="kopa-area kopa-area-2"&gt
+
+                &ltdiv class="content-wrap"&gt
+
+                    &ltdiv class="row"&gt
+                    
+                        &ltdiv class="widget-area-wrap"&gt
+
+                            &ltdiv class="widget-area-15"&gt
+                                
+                                [Widget]
+
+                            &lt/div&gt
+                            &lt!-- widget-area-15 --&gt
+
+                            &ltdiv class="widget-area-16"&gt
+
+                                [Widget]
+                            
+                            &lt/div&gt
+                            &lt!-- widget-area-16 --&gt
+                        
+                        &lt/div&gt
+                        &lt!-- widget-area-wrap --&gt
+
+                        &ltdiv class="widget-area-17"&gt
+
+                            [Widget]
+                        
+                        &lt/div&gt
+                        &lt!-- widget-area-17 --&gt
+
+                    &lt/div&gt
+                    &lt!-- row --&gt 
+
+                &lt/div&gt
+                &lt!-- content-wrap --&gt
+                
+            &lt/section&gt
+            &lt!-- kopa-area-2 --&gt
+
+            &ltdiv class="widget-area-24"&gt
+            
+                [Widget]
+
+            &lt/div&gt
+            &lt!-- widget-area-24 --&gt
+        
+        &lt/div&gt
+        &lt!-- wrapper --&gt
+
+    &lt/div&gt
+    &lt!-- main-content --&gt
+
+    &ltdiv id="bottom-sidebar"&gt
+
+        &ltdiv class="bottom-area-1"&gt
+
+            &ltdiv class="wrapper"&gt
+
+                [Logo]
+
+                [Bottom Nav]    
+            
+            &lt/div&gt
+            &lt!-- wrapper --&gt
+        &lt/div&gt
+        &lt!-- bottom-area-2 --&gt
+
+        &ltdiv class="bottom-area-2"&gt
+
+            &ltdiv class="wrapper"&gt
+
+                &ltdiv class="row"&gt
+                
+                    &ltdiv class="widget-area-18"&gt
+
+                        [Widget]
+                    
+                    &lt/div&gt
+                    &lt!-- widget-area-18 --&gt
+
+                    &ltdiv class="widget-area-19"&gt
+
+                        [Widget]
+                    
+                    &lt/div&gt
+                    &lt!-- widget-area-19 --&gt
+
+                    &ltdiv class="widget-area-20"&gt
+
+                        [Widget]
+                    
+                    &lt/div&gt
+                    &lt!-- widget-area-20 --&gt
+
+                    &ltdiv class="widget-area-21"&gt
+
+                        [Widget]
+                    
+                    &lt/div&gt
+                    &lt!-- widget-area-21 --&gt
+
+                    &ltdiv class="widget-area-22"&gt
+
+                        [Widget]
+                    
+                    &lt/div&gt
+                    &lt!-- widget-area-22 --&gt
+                
+                &lt/div&gt
+                &lt!-- row --&gt 
+            
+            &lt/div&gt
+            &lt!-- wrapper --&gt
+
+        &lt/div&gt
+        &lt!-- bottom-area-2 --&gt
+
+        &ltdiv class="bottom-area-3"&gt
+
+            &ltdiv class="wrapper"&gt
+
+                [News Letter]
+            
+            &lt/div&gt
+            &lt!-- wrapper --&gt
+
+        &lt/div&gt
+        &lt!-- bottom-area-3 --&gt
+
+    &lt/div&gt
+    &lt!-- bottom-sidebar --&gt
+
+    &ltfooter id="kopa-footer"&gt
+        
+        &ltdiv class="wrapper clearfix"&gt
+
+            [Copyright]
+
+        &lt/div&gt
+        &lt!-- wrapper --&gt
+
+    &lt/footer&gt
+    &lt!-- kopa-footer --&gt
+    
+&lt/body&gt
+
+
+</pre>
+
+<div class="separater "></div>
+<h6>Slider</h6>
+<p>The template uses Owl Carousel jQuery plugin for Home page slider. Here is the general structure.
+<p/>
+<pre class="prettyprint lines">
+
+&ltdiv class="owl-carousel"&gt
+
+    &ltdiv class="item"&gt
+        [Slide Content]
+    &lt/div&gt
+    &ltdiv class="item"&gt
+        [Slide Content]
+    &lt/div&gt
+    &ltdiv class="item"&gt
+        [Slide Content]
+    &lt/div&gt
+
+    ...
+
+&lt/div&gt
+&lt!-- owl-carousel --&gt
+
+</pre>		
+        <div class="separater"></div>
+        
+        <h5>Sidebars</h5>
+		<p>There are sidebar containts widgets. Here is general structure of sidebars and widgets:</p>
+<pre class="prettyprint lines">
+
+&ltdiv class="sidebar"&gt
+
+    [Widget]
+    
+&lt/div&gt
+
+</pre>	
+<div class="separater"></div>
+<h5>A.1.2) Sub pages with sidebar</h5>		
+		<p>Here is general HTML structure of the sub page with sidebar</p>
+		<pre class="prettyprint lines">
+
+
+&ltbody class="kopa-sub-page"&gt
+
+    &ltheader class="kopa-header"&gt
+
+        &ltdiv class="kopa-header-top"&gt  
+
+            &ltdiv class="wrapper"&gt
+
+                &ltdiv class="header-top-left"&gt
+                    
+                    [User]
+
+                    [Social Links]
+
+                &lt/div&gt 
+                &lt!-- header-top-left --&gt  
+
+                &ltdiv class="header-top-right"&gt
+
+                    [Header Top List]
+
+                    [Search Box]
+
+                &lt/div&gt
+               &lt!-- header-top-right --&gt   
+
+            &lt/div&gt  
+            &lt!-- wrapper --&gt
+
+        &lt/div&gt
+        &lt!-- kopa-header-top --&gt
+
+        &ltdiv class="kopa-header-middle"&gt
+
+            &ltdiv class="wrapper"&gt
+
+                [Logo]
+
+                [Main Menu]
+
+            &lt/div&gt
+            &lt!-- wrapper --&gt
+
+        &lt/div&gt
+        &lt!-- kopa-header-middle --&gt
+
+        &ltdiv class="kopa-header-bottom"&gt
+
+            &ltdiv class="wrapper"&gt
+
+                [Secondary Menu]
+                
+            &lt/div&gt
+            &lt!-- wrapper --&gt
+
+        &lt/div&gt
+        &lt!-- kopa-header-bottom --&gt
+
+    &lt/header&gt
+    &lt!-- kopa-page-header --&gt
+
+    &ltdiv id="main-content"&gt
+
+        &ltdiv class="wrapper"&gt
+
+            &ltdiv class="main-top"&gt
+
+                [Ticker]
+
+                [Social Links]
+
+            &lt/div&gt
+            &lt!-- main-top --&gt
+
+            &ltdiv class="content-wrap"&gt
+
+                &ltdiv class="row"&gt
+
+                    &ltdiv class="kopa-main-col"&gt
+
+                        &ltdiv class="kopa-entry-list"&gt
+                  
+                            &ltul class="clearfix"&gt
+                                &ltli&gt
+
+                                [Post Item]
+
+                                &lt/li&gt
+                                &ltli&gt
+
+                                [Post Item]
+
+                                &lt/li&gt
+                                &ltli&gt
+
+                                [Post Item]
+
+                                &lt/li&gt
+                                ...
+
+                            &lt/ul&gt
+                            &lt!-- entry-list --&gt
+
+                            [Pagination]
+
+                        &lt/div&gt
+
+                    &lt/div&gt
+                    &lt!-- main-col --&gt
+
+                    &ltdiv class="sidebar widget-area-11"&gt
+
+                        [Widget]
+
+                        [Widget]
+
+                        ...
+
+                    &lt/div&gt
+                    &lt!-- sidebar --&gt
+
+                &lt/div&gt
+                &lt!-- row --&gt
+
+            &lt/div&gt
+            &lt!-- content-wrap --&gt
+        
+        &lt/div&gt
+        &lt!-- wrapper --&gt
+
+    &lt/div&gt
+    &lt!-- main-content --&gt
+
+    &ltdiv id="bottom-sidebar"&gt
+
+        &ltdiv class="bottom-area-1"&gt
+
+            &ltdiv class="wrapper"&gt
+
+                [Logo]
+
+                [Bottom Nav]    
+            
+            &lt/div&gt
+            &lt!-- wrapper --&gt
+        &lt/div&gt
+        &lt!-- bottom-area-2 --&gt
+
+        &ltdiv class="bottom-area-2"&gt
+
+            &ltdiv class="wrapper"&gt
+
+                &ltdiv class="row"&gt
+                
+                    &ltdiv class="widget-area-18"&gt
+
+                        [Widget]
+                    
+                    &lt/div&gt
+                    &lt!-- widget-area-18 --&gt
+
+                    &ltdiv class="widget-area-19"&gt
+
+                        [Widget]
+                    
+                    &lt/div&gt
+                    &lt!-- widget-area-19 --&gt
+
+                    &ltdiv class="widget-area-20"&gt
+
+                        [Widget]
+                    
+                    &lt/div&gt
+                    &lt!-- widget-area-20 --&gt
+
+                    &ltdiv class="widget-area-21"&gt
+
+                        [Widget]
+                    
+                    &lt/div&gt
+                    &lt!-- widget-area-21 --&gt
+
+                    &ltdiv class="widget-area-22"&gt
+
+                        [Widget]
+                    
+                    &lt/div&gt
+                    &lt!-- widget-area-22 --&gt
+                
+                &lt/div&gt
+                &lt!-- row --&gt 
+            
+            &lt/div&gt
+            &lt!-- wrapper --&gt
+
+        &lt/div&gt
+        &lt!-- bottom-area-2 --&gt
+
+        &ltdiv class="bottom-area-3"&gt
+
+            &ltdiv class="wrapper"&gt
+
+                [News Letter]
+            
+            &lt/div&gt
+            &lt!-- wrapper --&gt
+
+        &lt/div&gt
+        &lt!-- bottom-area-3 --&gt
+
+    &lt/div&gt
+    &lt!-- bottom-sidebar --&gt
+
+    &ltfooter id="kopa-footer"&gt
+        
+        &ltdiv class="wrapper clearfix"&gt
+
+            [Copyright]
+
+        &lt/div&gt
+        &lt!-- wrapper --&gt
+
+    &lt/footer&gt
+    &lt!-- kopa-footer --&gt
+    
+&lt/body&gt
+
+
+        
+</pre>
+
+<h5>A.1.3) Sub pages no sidebar</h5>		
+		<p>Here is general HTML structure of the sub page with no sidebar</p>
+		<pre class="prettyprint lines">
+
+
+&ltbody class="kopa-home-page"&gt
+
+    &ltheader class="kopa-header"&gt
+
+        &ltdiv class="kopa-header-top"&gt  
+
+            &ltdiv class="wrapper"&gt
+
+                &ltdiv class="header-top-left"&gt
+                    
+                    [User]
+
+                    [Social Links]
+
+                &lt/div&gt 
+                &lt!-- header-top-left --&gt  
+
+                &ltdiv class="header-top-right"&gt
+
+                    [Header Top List]
+
+                    [Search Box]
+
+                &lt/div&gt
+               &lt!-- header-top-right --&gt   
+
+            &lt/div&gt  
+            &lt!-- wrapper --&gt
+
+        &lt/div&gt
+        &lt!-- kopa-header-top --&gt
+
+        &ltdiv class="kopa-header-middle"&gt
+
+            &ltdiv class="wrapper"&gt
+
+                [Logo]
+
+                [Main Menu]
+
+            &lt/div&gt
+            &lt!-- wrapper --&gt
+
+        &lt/div&gt
+        &lt!-- kopa-header-middle --&gt
+
+        &ltdiv class="kopa-header-bottom"&gt
+
+            &ltdiv class="wrapper"&gt
+
+                [Secondary Menu]
+                
+            &lt/div&gt
+            &lt!-- wrapper --&gt
+
+        &lt/div&gt
+        &lt!-- kopa-header-bottom --&gt
+
+    &lt/header&gt
+    &lt!-- kopa-page-header --&gt
+
+    &ltdiv id="main-content"&gt
+
+        &ltdiv class="wrapper"&gt
+
+            &ltdiv class="main-top"&gt
+
+                [Ticker]
+
+                [Social Links]
+
+            &lt/div&gt
+            &lt!-- main-top --&gt
+
+            &ltdiv class="content-wrap"&gt
+
+                &ltdiv class="row"&gt
+
+                    [Widget]
+
+                    [Widget]
+
+                    ...
+
+                &lt/div&gt
+                &lt!-- row --&gt
+
+            &lt/div&gt
+            &lt!-- content-wrap --&gt
+        
+        &lt/div&gt
+        &lt!-- wrapper --&gt
+
+    &lt/div&gt
+    &lt!-- main-content --&gt
+
+    &ltdiv id="bottom-sidebar"&gt
+
+        &ltdiv class="bottom-area-1"&gt
+
+            &ltdiv class="wrapper"&gt
+
+                [Logo]
+
+                [Bottom Nav]    
+            
+            &lt/div&gt
+            &lt!-- wrapper --&gt
+        &lt/div&gt
+        &lt!-- bottom-area-2 --&gt
+
+        &ltdiv class="bottom-area-2"&gt
+
+            &ltdiv class="wrapper"&gt
+
+                &ltdiv class="row"&gt
+                
+                    &ltdiv class="widget-area-18"&gt
+
+                        [Widget]
+                    
+                    &lt/div&gt
+                    &lt!-- widget-area-18 --&gt
+
+                    &ltdiv class="widget-area-19"&gt
+
+                        [Widget]
+                    
+                    &lt/div&gt
+                    &lt!-- widget-area-19 --&gt
+
+                    &ltdiv class="widget-area-20"&gt
+
+                        [Widget]
+                    
+                    &lt/div&gt
+                    &lt!-- widget-area-20 --&gt
+
+                    &ltdiv class="widget-area-21"&gt
+
+                        [Widget]
+                    
+                    &lt/div&gt
+                    &lt!-- widget-area-21 --&gt
+
+                    &ltdiv class="widget-area-22"&gt
+
+                        [Widget]
+                    
+                    &lt/div&gt
+                    &lt!-- widget-area-22 --&gt
+                
+                &lt/div&gt
+                &lt!-- row --&gt 
+            
+            &lt/div&gt
+            &lt!-- wrapper --&gt
+
+        &lt/div&gt
+        &lt!-- bottom-area-2 --&gt
+
+        &ltdiv class="bottom-area-3"&gt
+
+            &ltdiv class="wrapper"&gt
+
+                [News Letter]
+            
+            &lt/div&gt
+            &lt!-- wrapper --&gt
+
+        &lt/div&gt
+        &lt!-- bottom-area-3 --&gt
+
+    &lt/div&gt
+    &lt!-- bottom-sidebar --&gt
+
+    &ltfooter id="kopa-footer"&gt
+        
+        &ltdiv class="wrapper clearfix"&gt
+
+            [Copyright]
+
+        &lt/div&gt
+        &lt!-- wrapper --&gt
+
+    &lt/footer&gt
+    &lt!-- kopa-footer --&gt
+    
+&lt/body&gt
+
+
+</pre>
+      <h5>A.1.4) Short Codes</h5>
+		<ol>
+            <li>- Heading tags</li>
+            <li>- Button</li>
+            <li>- Tabs</li>   
+            <li>- Accordion, Toggle</li> 
+            <li>- Alert Box</li>
+            <li>- List</li>
+            <li>- Dropcaps</li>
+            <li>- Column</li>      
+		</ol>
+		
+</div><!--wrapper-->
+<div class="wrapper">
+<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+<p>This theme uses <strong>style.css</strong> file as main CSS file and other additional css files located at css folder.</p>
+		<h6>style.css</h6>
+		<p>Main CSS files in this theme is style.css that contains all of specific stylings for the theme.The file is separated into sections using labels as follows:</p> 
+
+<pre class="prettyprint lines">		
+
+/* =========================================================
+Repeatable Patterns
+============================================================ */
+
+[SOME CODES]
+
+/* =========================================================
+Basic Structure
+============================================================ */
+
+[SOME CODES]
+
+/* =========================================================
+Header
+============================================================ */
+
+[SOME CODES]
+
+/* =========================================================
+Navigation
+============================================================ */
+
+[SOME CODES]
+
+/* =========================================================
+Widget
+============================================================ */
+
+[SOME CODES]
+
+/* =========================================================
+Content
+============================================================ */
+
+[SOME CODES]
+
+/* =========================================================
+Home Page
+============================================================ */
+
+[SOME CODES]
+
+/* =========================================================
+Sub Page
+============================================================ */
+
+[SOME CODES]
+
+/* =========================================================
+Footer
+============================================================ */
+
+[SOME CODES]
+
+/* =========================================================
+Responsive
+============================================================ */
+
+[SOME CODES]
+
+
+</pre>
+<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+		<h6>Responsive</h6> 
+		<p>"5. - Responsive" in file "style.css" contains styling for media queries that allows us to tailor to different resolutions and devices without changing the content. The file is separated into sections as follows:</p>
+		<pre class="prettyprint lines">	
+
+@media only screen and (max-width: 1160px)  {
+
+[SOME CODES]
+
+}
+
+@media only screen and (max-width: 1023px) {
+	
+[SOME CODES]
+
+}
+
+@media only screen and (max-width: 979px) {
+	
+[SOME CODES]
+
+}
+
+@media only screen and (max-width: 799px) {
+	
+[SOME CODES]
+
+}
+
+@media only screen and (max-width: 767px) {
+	
+[SOME CODES]
+
+}
+
+@media only screen and (max-width: 639px) {
+	
+[SOME CODES]
+
+}
+
+@media only screen and (max-width: 479px) {
+	
+[SOME CODES]
+
+}
+
+@media only screen and (max-width: 359px) {
+	
+[SOME CODES]
+
+}
+
+   </pre>	
+   <p>If you would like to edit styling of the specific device width, simply find the appropriate label in the <strong>responsive.css</strong> file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+		<h4>Additional css files at css folder</h4>
+		<ol>
+			<li><strong>bootstrap.css</strong> - CSS framework</li>
+         <li><strong>font-awesome.css</strong> - CSS for icon font</li>
+         <li><strong>kopa-flat-font.css</strong> - css style for flat font</li>
+         <li><strong>animate.css</strong> - CSS animation</li>
+         <li><strong>owl.carousel.css</strong> - css style for OwlCarousel jQuery plugin</li>
+         <li><strong>owl.theme.css</strong> - css style for OwlCarousel jQuery plugin</li>
+         <li><strong>jquery.mCustomScrollbar.css</strong> - css style for mCustomScrollbar jQuery plugin</li>
+         <li><strong>jquery.navgoco.css</strong> - css style for Navgoco jQuery plugin</li>
+         <li><strong>superfish.css</strong> - css style for Superfish jQuery plugin</li>
+         <li><strong>superfish-vertical.css</strong> - css style for Superfish jQuery plugin</li>
+         <li><strong>ie.css</strong> - css fix for later IE9 Browser</li>
+         <li><strong>ie9.css</strong> - css fix for IE9 Browser</li> 
+		</ol>
+</div><!--wrapper-->
+<div class="wrapper">
+<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+<p>This theme imports following Javascript files.</p>
+		
+		<ol>
+			<li><strong>jquery-1.10.2.min.js</strong> - Javascript library</li>
+            <li><strong>superfish.js</strong> - Dropdown menu jQuery plugin</li>
+            <li><strong>jquery.navgoco.js</strong> - Mobile menu jQuery plugin</li>
+            <li><strong>bootstrap.min.js</strong> - Boostrap framework</li>
+            <li><strong>modernizr.custom.60104.js</strong> - Modernizr jQuery plugin</li>
+            <li><strong>masonry.pkgd.js</strong> - Magic layout jQuery plugin</li>
+            <li><strong>imagesloaded.js</strong> - Images load jQuery plugin</li>
+            <li><strong>imgliquid.js</strong> - Images Liquid jQuery plugin</li>
+            <li><strong>owl.carousel.js</strong> - OwlCarousel jQuery plugin</li>
+            <li><strong>jquery.validate.min.js</strong> - form validator that is used for contact page (contact form) and single page (comment form)</li>
+            <li><strong>jquery.form.js</strong> - allows you to upgrade HTML forms to use AJAX</li>
+            <li><strong>gmaps.js</strong> - GoogleMap jQuery plugin</li>
+            <li><strong>jquery.easypiechart.js</strong> - Easypiechart jQuery plugin</li>
+            <li><strong>excanvas.compiled.js</strong> - jQuery fix for Canvas</li>
+            <li><strong>excanvas.js</strong> - jQuery fix for Canvas</li>
+            <li><strong>jquery.matchHeight.js</strong> - matchHeight jQuery plugin</li>
+            <li><strong>mCustomScrollbar.js</strong> - jQuery custom content scroller plugin</li>
+            <li><strong>jquery.mousewheel.min.js</strong> - Mousewheel jQuery plugin</li>
+            <li><strong>jquery.carouFredSel-6.2.1.js</strong> - carouFredsel jQuery plugin</li>
+			<li><strong>custom.js</strong> - contains custom script</li>			
+		</ol>
+		<p>Except <strong>custom.js</strong>, all of the plugins are packed, so you don't need to manually edit anything in these files. The only necessary thing to know is how to call the method. You can refer to the website of the plugin author I listed in the <strong>"Sources and Credits"</strong> section  to learn more about them.</p>  
+		<p><strong>custom.js</strong> contains custom scripts and scripts to call method for above plugin. The file is separated in to sections with appropriate label.</p>
+  <pre class="prettyprint lines">	
+
+
+/* =========================================================
+1. top Menu
+============================================================ */
+
+[SOME CODES]
+
+/* =========================================================
+2. Main Menu
+============================================================ */
+
+[SOME CODES]
+
+/* =========================================================
+3. Accordion
+============================================================ */
+
+[SOME CODES]
+
+ /* =========================================================
+4. Toggle
+============================================================ */
+
+[SOME CODES]
+
+ /* =========================================================
+5. Owl Carousel
+============================================================ */
+
+[SOME CODES]
+ 
+/* =========================================================
+6. Sync owl carousel
+============================================================ */
+
+[SOME CODES]
+
+/* ============================================
+7. Search box
+=============================================== */
+
+[SOME CODES]
+
+/* =========================================================
+8. Pie chart
+============================================================ */
+
+[SOME CODES]
+
+/* ============================================
+9. Single-share-filter
+=============================================== */
+
+[SOME CODES]
+
+/* ============================================
+10. Time-filter
+=============================================== */ 
+
+[SOME CODES]
+
+/* ============================================
+11. Smooth Scrolling
+=============================================== */   
+
+[SOME CODES]
+
+/* =========================================================
+12. Scroll Slider
+============================================================ */
+
+[SOME CODES]
+
+/* =========================================================
+13. Breadking News
+============================================================ */
+
+[SOME CODES]
+
+/* =========================================================
+14. Validate Form
+============================================================ */
+
+[SOME CODES]
+
+/* =========================================================
+15. Google Map
+============================================================ */
+
+[SOME CODES]
+ 
+ /* =========================================================
+16. Masonry
+============================================================ */
+
+[SOME CODES]
+
+
+/* ============================================
+17. Match height
+=============================================== */
+
+[SOME CODES]
+
+/* ============================================
+18. Mobile-menu
+=============================================== */
+
+[SOME CODES]
+
+</pre>		
+	
+</div><!--wrapper-->
+<div class="wrapper">
+	<h3 id="credits"><strong>I) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+	<p>I've used the following images, icons or other files as listed.</p>
+	<ul>
+      <li><a target="_blank" href="http://www.jquery.com">jquery-1.10.2.min.js</a></li>
+      <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+      <li><a href="http://modernizr.com/" target="_blank">Modernizr jQuery plugin</a></li>	
+      <li><a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/" target="_blank">form validator</a></li>
+      <li><a href="http://malsup.com/jquery/form/" target="_blank">jquery.form.js</a></li>
+      <li><a href="http://masonry.desandro.com/" target="_blank">Magic layout jQuery plugin</a></li>
+      <li><a href="http://plugins.jquery.com/superfish/" target="_blank">Main menu jQuery plugin</a></li>
+      <li><a href="http://plugins.jquery.com/navgoco/" target="_blank">Mobile menu jQuery plugin</a></li>
+      <li><a href="http://hpneo.github.io/gmaps/" target="_blank">Google map jQuery plugin</a></li>
+      <li><a href="http://www.owlgraphic.com/owlcarousel/" target="_blank">OwlCarousel jQuery plugin</a></li>
+      <li><a href="http://rendro.github.io/easy-pie-chart/" target="_blank">Easypiechart jQuery plugin</a></li>
+      <li><a href="brm.io/jquery-match-height/" target="_blank">matchHeight jQuery plugin</a></li>
+      <li><a href="http://manos.malihu.gr/jquery-custom-content-scroller/" target="_blank">jQuery custom content scroller plugin</a></li>
+      <li><a href="https://github.com/jquery/jquery-mousewheel" target="_blank">Mousewheel jQuery plugin</a></li>
+      <li><a href="http://dev7studios.com/products/caroufredsel-wordpress-plugin" target="_blank">carouFredsel jQuery plugin</a></li>
+      <li><a href="http://www.iconsweets2.com/" target="_blank">iconSweets 2</a> - <i>by Yummygum</i></li>
+      <li><a href="http://www.flickr.com/photos/markjsebastian" target="_blank">pictures</a> - <i>by Mark Sebastian</i></li>
+      <li><a href="http://www.pexels.com/photo/1238/" target="_blank">http://www.pexels.com/photo/1238/</a></li>
+      <li><a href="http://www.pexels.com/photo/1268/" target="_blank">http://www.pexels.com/photo/1268/</a></li>
+      <li><a href="http://www.pexels.com/photo/1994/" target="_blank">http://www.pexels.com/photo/1994/</a></li>
+      <li><a href="http://www.pexels.com/photo/2174/" target="_blank">http://www.pexels.com/photo/2174/</a></li>
+      <li><a href="http://www.pexels.com/photo/2177/" target="_blank">http://www.pexels.com/photo/2177/</a></li>
+      <li><a href="http://www.pexels.com/photo/2180/" target="_blank">http://www.pexels.com/photo/2180/</a></li>
+      <li><a href="http://www.pexels.com/photo/2182/" target="_blank">http://www.pexels.com/photo/2182/</a></li>
+      <li><a href="http://www.pexels.com/photo/2199/" target="_blank">http://www.pexels.com/photo/2199/</a></li>
+      <li><a href="http://www.pexels.com/photo/2207/" target="_blank">http://www.pexels.com/photo/2207/</a></li>
+      <li><a href="http://www.pexels.com/photo/2209/" target="_blank">http://www.pexels.com/photo/2209/</a></li>
+      <li><a href="http://www.pexels.com/photo/2340/" target="_blank">http://www.pexels.com/photo/2340/</a></li>
+      <li><a href="http://www.pexels.com/photo/2346/" target="_blank">http://www.pexels.com/photo/2346/</a></li>
+      <li><a href="http://www.pexels.com/photo/2355/" target="_blank">http://www.pexels.com/photo/2355/</a></li>
+      <li><a href="http://www.pexels.com/photo/2641/" target="_blank">http://www.pexels.com/photo/2641/</a></li>
+      <li><a href="http://www.pexels.com/photo/2029/" target="_blank">http://www.pexels.com/photo/2029/</a></li>
+      <li><a href="http://www.pexels.com/photo/2342/" target="_blank">http://www.pexels.com/photo/2342/</a></li>
+      <li><a href="http://www.pexels.com/photo/2338/" target="_blank">http://www.pexels.com/photo/2338/</a></li>
+      <li><a href="http://www.pexels.com/photo/1994/" target="_blank">http://www.pexels.com/photo/1994/</a></li>
+      <li><a href="http://www.pexels.com/photo/926/" target="_blank">http://www.pexels.com/photo/926/</a></li>
+      <li><a href="http://www.pexels.com/photo/921/" target="_blank">http://www.pexels.com/photo/921/</a></li>
+      <li><a href="http://www.pexels.com/photo/455/" target="_blank">http://www.pexels.com/photo/455/</a></li>
+      <li><a href="http://www.pexels.com/photo/1005/" target="_blank">http://www.pexels.com/photo/1005/</a></li>
+      <li><a href="http://www.pexels.com/photo/3042/" target="_blank">http://www.pexels.com/photo/3042/</a></li>
+      <li><a href="http://pixabay.com/en/the-ball-stadion-football-the-pitch-488714/" target="_blank">http://pixabay.com/en/the-ball-stadion-football-the-pitch-488714/</a></li>
+      <li><a href="http://pixabay.com/en/the-ball-stadion-football-the-pitch-488700/" target="_blank">http://pixabay.com/en/the-ball-stadion-football-the-pitch-488700/</a></li>
+      <li><a href="http://pixabay.com/en/basketball-sports-teams-players-95607/" target="_blank">http://pixabay.com/en/basketball-sports-teams-players-95607/</a></li>
+      <li><a href="http://pixabay.com/en/volleyball-sport-ball-volley-520083/" target="_blank">http://pixabay.com/en/volleyball-sport-ball-volley-520083/</a></li>
+      <li><a href="http://pixabay.com/en/quarterback-american-football-sport-67701/" target="_blank">http://pixabay.com/en/quarterback-american-football-sport-67701/</a></li>
+      <li><a href="http://pixabay.com/en/football-team-people-game-crowd-461340/" target="_blank">http://pixabay.com/en/football-team-people-game-crowd-461340/</a></li>
+      <li><a href="http://pixabay.com/en/volleyball-sport-ball-volley-520093/" target="_blank">http://pixabay.com/en/volleyball-sport-ball-volley-520093/</a></li>
+      <li><a href="http://pixabay.com/en/rugby-sports-players-competition-78193/
+" target="_blank">http://pixabay.com/en/rugby-sports-players-competition-78193/
+</a></li>
+      <li><a href="http://pixabay.com/en/lacrosse-air-force-ohio-state-game-165576/" target="_blank">http://pixabay.com/en/lacrosse-air-force-ohio-state-game-165576/</a></li>
+      <li><a href="http://pixabay.com/en/american-football-sport-competition-63109/" target="_blank">http://pixabay.com/en/american-football-sport-competition-63109/</a></li>
+      <li><a href="http://pixabay.com/en/box-boxing-match-uppercut-62867/" target="_blank">http://pixabay.com/en/box-boxing-match-uppercut-62867/</a></li>
+      <li><a href="http://pixabay.com/en/football-american-football-position-380388/" target="_blank">http://pixabay.com/en/football-american-football-position-380388/</a></li>
+      <li><a href="http://pixabay.com/en/fitness-personal-trainer-guy-black-465205/" target="_blank">http://pixabay.com/en/fitness-personal-trainer-guy-black-465205/</a></li>
+      <li><a href="http://pixabay.com/en/roller-skates-rollerblades-381216/
+" target="_blank">http://pixabay.com/en/roller-skates-rollerblades-381216/
+</a></li>
+      <li><a href="http://pixabay.com/en/rollerderby-skate-roller-skating-112223/" target="_blank">http://pixabay.com/en/rollerderby-skate-roller-skating-112223/</a></li>
+      <li><a href="http://pixabay.com/en/boxing-ring-boxers-fight-fighting-100733/" target="_blank">http://pixabay.com/en/boxing-ring-boxers-fight-fighting-100733/</a></li>
+      <li><a href="http://pixabay.com/en/argument-conflict-controversy-238529/" target="_blank">http://pixabay.com/en/argument-conflict-controversy-238529/</a></li>
+      <li><a href="http://pixabay.com/en/running-shoe-shoe-brooks-371624/" target="_blank">http://pixabay.com/en/running-shoe-shoe-brooks-371624/</a></li>
+      <li><a href="http://pixabay.com/en/tennis-tennis-racket-tennis-sports-453505/" target="_blank">http://pixabay.com/en/tennis-tennis-racket-tennis-sports-453505/</a></li>
+      <li><a href="http://pixabay.com/en/moto-cross-motorbike-sports-jump-214928/" target="_blank">http://pixabay.com/en/moto-cross-motorbike-sports-jump-214928/</a></li>
+      <li><a href="http://pixabay.com/en/biker-motorcycle-dirt-extreme-bike-384178/" target="_blank">http://pixabay.com/en/biker-motorcycle-dirt-extreme-bike-384178/</a></li>
+      <li><a href="http://pixabay.com/en/running-shoe-shoe-brooks-371625/" target="_blank">http://pixabay.com/en/running-shoe-shoe-brooks-371625/</a></li>
+      <li><a href="http://pixabay.com/en/running-shoe-shoe-asics-321199/" target="_blank">http://pixabay.com/en/running-shoe-shoe-asics-321199/</a></li>
+      <li><a href="http://pixabay.com/en/running-shoe-shoe-brooks-371625/
+" target="_blank">http://pixabay.com/en/running-shoe-shoe-brooks-371625/
+</a></li>
+      <li><a href="http://pixabay.com/en/running-shoe-luminous-bright-yellow-423164/
+" target="_blank">http://pixabay.com/en/running-shoe-luminous-bright-yellow-423164/
+</a></li>
+      <li><a href="http://pixabay.com/en/crowd-people-cheering-spectators-464571/" target="_blank">http://pixabay.com/en/crowd-people-cheering-spectators-464571/</a></li>
+      <li><a href="http://pixabay.com/en/quarterback-american-football-run-558057/" target="_blank">http://pixabay.com/en/quarterback-american-football-run-558057/</a></li>
+      <li><a href="http://pixabay.com/en/man-iphone-taking-picture-phone-535872/" target="_blank">http://pixabay.com/en/man-iphone-taking-picture-phone-535872/</a></li>
+      <li><a href="http://pixabay.com/en/the-ball-stadion-football-the-pitch-488716/" target="_blank">http://pixabay.com/en/the-ball-stadion-football-the-pitch-488716/</a></li>
+      <li><a href="http://pixabay.com/en/track-colorado-springs-colorado-81050/" target="_blank">http://pixabay.com/en/track-colorado-springs-colorado-81050/</a></li>
+      <li><a href="http://pixabay.com/en/quarterback-american-football-sport-73614/" target="_blank">http://pixabay.com/en/quarterback-american-football-sport-73614/</a></li>
+      <li><a href="http://pixabay.com/en/football-soccer-players-competition-83222/" target="_blank">http://pixabay.com/en/football-soccer-players-competition-83222/</a></li>
+      <li><a href="http://pixabay.com/en/fitness-guy-black-exercise-465203/" target="_blank">http://pixabay.com/en/fitness-guy-black-exercise-465203/</a></li>
+      <li><a href="http://pixabay.com/en/volleyball-women-s-sports-90896/" target="_blank">http://pixabay.com/en/volleyball-women-s-sports-90896/</a></li>
+      <li><a href="http://pixabay.com/en/football-player-sport-playing-328852/" target="_blank">http://pixabay.com/en/football-player-sport-playing-328852/</a></li>
+      <li><a href="http://pixabay.com/en/baseball-game-sports-sliding-83507/" target="_blank">http://pixabay.com/en/baseball-game-sports-sliding-83507/</a></li>
+      <li><a href="http://pixabay.com/en/football-american-players-teams-95609/" target="_blank">http://pixabay.com/en/football-american-players-teams-95609/</a></li>
+      <li><a href="http://pixabay.com/en/shoes-sport-feet-foot-346986/" target="_blank">http://pixabay.com/en/shoes-sport-feet-foot-346986/</a></li>
+      <li><a href="http://pixabay.com/en/sports-shoes-running-shoes-sneakers-115149/" target="_blank">http://pixabay.com/en/sports-shoes-running-shoes-sneakers-115149/</a></li>
+      <li><a href="http://pixabay.com/en/stadium-football-lawn-sports-189777/" target="_blank">http://pixabay.com/en/stadium-football-lawn-sports-189777/</a></li>
+      <li><a href="http://pixabay.com/en/soccer-football-stadium-players-92194/" target="_blank">http://pixabay.com/en/soccer-football-stadium-players-92194/</a></li>
+      <li><a href="http://pixabay.com/en/on-foot-shoes-leg-patch-pavement-484364/" target="_blank">http://pixabay.com/en/on-foot-shoes-leg-patch-pavement-484364/</a></li>
+      <li><a href="http://pixabay.com/en/soccer-ball-football-players-game-263716/" target="_blank">http://pixabay.com/en/soccer-ball-football-players-game-263716/</a></li>
+      <li><a href="https://www.flickr.com/photos/ryanknapp/5856012572" target="_blank">https://www.flickr.com/photos/ryanknapp/5856012572</a></li>
+      <li><a href="https://www.flickr.com/photos/ryanknapp/5855460653" target="_blank">https://www.flickr.com/photos/ryanknapp/5855460653</a></li>
+      <li><a href="https://www.flickr.com/photos/chadcooperphotos/12245751884" target="_blank">https://www.flickr.com/photos/chadcooperphotos/12245751884</a></li>
+      <li><a href="https://www.flickr.com/photos/ryanknapp/5856012870" target="_blank">https://www.flickr.com/photos/ryanknapp/5856012870</a></li>
+      <li><a href="https://www.flickr.com/photos/virtualsugar/4981408231" target="_blank">https://www.flickr.com/photos/virtualsugar/4981408231</a></li>
+      <li><a href="https://www.flickr.com/photos/chadcooperphotos/11344699744" target="_blank">https://www.flickr.com/photos/chadcooperphotos/11344699744</a></li>
+      <li><a href="http://pixabay.com/en/stadium-football-olympic-stadium-181457/" target="_blank">http://pixabay.com/en/stadium-football-olympic-stadium-181457/</a></li>
+      <li><a href="http://pixabay.com/en/hockey-sports-players-teams-net-100729/" target="_blank">http://pixabay.com/en/hockey-sports-players-teams-net-100729/</a></li>
+      <li><a href="http://pixabay.com/en/football-american-football-position-380388/" target="_blank">http://pixabay.com/en/football-american-football-position-380388/</a></li>
+      <li><a href="http://pixabay.com/en/player-american-football-football-380362/" target="_blank">http://pixabay.com/en/player-american-football-football-380362/</a></li>
+      <li><a href="http://photodune.net/item/football-player/4899234" target="_blank">http://photodune.net/item/football-player/4899234</a></li>
+      <li><a href="http://photodune.net/item/football-player-in-action/1825007" target="_blank">http://photodune.net/item/football-player-in-action/1825007</a></li>
+      <li><a href="http://photodune.net/item/football-player/448127" target="_blank">http://photodune.net/item/football-player/448127</a></li>
+      <li><a href="http://photodune.net/item/soccer-player/2243019" target="_blank">http://photodune.net/item/soccer-player/2243019</a></li>
+      <li><a href="http://photodune.net/item/soccer-player/2998106" target="_blank">http://photodune.net/item/soccer-player/2998106</a></li>
+      <li><a href="http://photodune.net/item/two-football-player/4881372" target="_blank">http://photodune.net/item/two-football-player/4881372</a></li>
+      <li><a href="http://photodune.net/item/young-american-football-player-in-position/5424324" target="_blank">http://photodune.net/item/young-american-football-player-in-position/5424324</a></li>
+      <li><a href="http://photodune.net/item/two-football-players-striking-the-ball/4417655" target="_blank">http://photodune.net/item/two-football-players-striking-the-ball/4417655</a></li>
+      <li><a href="http://photodune.net/item/basketball-player/3465830" target="_blank">http://photodune.net/item/basketball-player/3465830</a></li>
+      <li><a href="http://photodune.net/item/soccer-player/2998106" target="_blank">http://photodune.net/item/soccer-player/2998106</a></li>
+      <li><a href="http://photodune.net/item/basketball-player-with-basketball/4943815" target="_blank">http://photodune.net/item/basketball-player-with-basketball/4943815</a></li>
+      <li><a href="http://photodune.net/item/soccer-players/7740298" target="_blank">http://photodune.net/item/soccer-players/7740298</a></li>
+      <li><a href="http://photodune.net/item/football-player/2509059" target="_blank">http://photodune.net/item/football-player/2509059</a></li>
+      <li><a href="http://photodune.net/item/golf-player-hitting-the-ball/443945" target="_blank">http://photodune.net/item/golf-player-hitting-the-ball/443945</a></li>
+      <li><a href="http://photodune.net/item/soccer-player/869471" target="_blank">http://photodune.net/item/soccer-player/869471</a></li>
+      <li><a href="http://photodune.net/item/basketball-player/4477805" target="_blank">http://photodune.net/item/basketball-player/4477805</a></li>
+      <li><a href="http://photodune.net/item/soccer-players-team/3466702" target="_blank">http://photodune.net/item/soccer-players-team/3466702</a></li>
+      <li><a href="http://photodune.net/item/soccer-player/869493" target="_blank">http://photodune.net/item/soccer-player/869493</a></li>
+      <li><a href="http://photodune.net/item/soccer-players/6888695" target="_blank">http://photodune.net/item/soccer-players/6888695</a></li>
+      <li><a href="http://photodune.net/item/basketball-player-in-action/5368388" target="_blank">http://photodune.net/item/basketball-player-in-action/5368388</a></li>
+	</ul>
+</div>
+<div class="wrapper">
+	<p>Thank you so much for purchasing this theme. If you have any question relating to the themes please don't hesitate to ask your question at <a href="http://kopatheme.com/forum">http://kopatheme.com/forum</a></p> 
+	<p class="append-bottom alt large"><strong>KOPATHEME</strong><br>
+    Email: <a href="mailto:kopatheme@gmail.com">kopatheme@gmail.com</a><br>
+	Website: <a href="http://kopatheme.com">http://kopatheme.com</a><br>
+	Website: <a href="http://kopatheme.com/forum">http://kopatheme.com/forum</a></p>
+	<p><a href="#toc">Go To Table of Contents</a></p>
+</div>
+</body>
+</html>
