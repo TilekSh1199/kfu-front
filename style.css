@@ -5106,27 +5106,34 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  }
  
  .style-bg-color ul li a.fa-facebook {
-   
+   font-size: 25px
+   /* background: #0d5cc8; */
  }
  
  .style-bg-color ul li a.fa-twitter {
-   
+   font-size: 25px
+   /* background: #28aae1; */
+ }
+ 
+ .style-bg-color ul li a.fa-youtube{
+   font-size: 25px
  }
  
  .style-bg-color ul li a.fa-google-plus {
-  
+   background: #e82231;
  }
  
  .style-bg-color ul li a.fa-rss {
-   
+   background: #ffc000;
  }
  
  .style-bg-color ul li a.fa-pinterest {
-   
+   background: #1d2c86;
  }
  
  .style-bg-color ul li a.fa-instagram {
-   
+   font-size: 25px
+   /* background: #eed091; */
  }
  
  .style-bg-color ul li a:hover {
