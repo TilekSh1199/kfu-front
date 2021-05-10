@@ -10981,6 +10981,7 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  
  .buttons-team{
    display: flex;
+   flex-wrap: wrap;
   //  justify-content: space-evenly;
 
    & a{
