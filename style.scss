@@ -1118,6 +1118,11 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  .kopa-button.color-button.color-purple {
    background: #572a6a;
  }
+
+ #account-icon{
+   width: 25px;
+   height: 25px;
+ }
  
  .kopa-button.color-button.color-green3 {
    background: #5ee8bf;
@@ -1781,9 +1786,9 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  }
  
  .kopa-logo-2 {
-   width: 160px;
+   width: 200px;
    height: 100%;
-   background-color: #e82231;
+    background: linear-gradient(135deg, #e82231 68%,#e82231 68%,#e82231 68%,#e82231 68%,#06335c 69%,#06335c 79%,#06335c 79%,#06335c 81%,#06335c 87%,#06335c 87%,#06335c 91%,#06335c 91%,#06335c 92%,#06335c 94%,#06335c 94%,#06335c 94%,#06335c 97%,#06335c 97%,#06335c 98%,#06335c 99%,#2989d8 99%,#2989d8 99%,#2989d8 99%,#06335c 99%,#06335c 100%); 
   //  top: -40px;
   //  position: relative;
    z-index: 2;  
@@ -1896,22 +1901,23 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    */
  /*--- main-nav ---*/
  .kopa-main-nav {
+   display: flex;
    width: 100%;
    float: right;
  }
  
- .main-menu, .main-menu-2 {
+ .main-menu, .main-menu-2, .custom-ul {
    position: relative;
    border: none;
    margin: 0;
    color: #572a6a;
  }
  
- .main-menu, .main-menu-2 a{
+ .main-menu, .main-menu-2 a, .custom-ul a{
    font-weight: 600;
  }
  
- .main-menu > li, .main-menu-2 > li {
+ .main-menu > li, .main-menu-2 > li, .custom-ul > li {
    list-style: none;
    padding: 0;
    margin: 0;
@@ -1930,7 +1936,7 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    margin: 0;
  }
  
- .main-menu > li > a, .main-menu-2 > li > a {
+ .main-menu > li > a, .main-menu-2 > li > a, .custom-ul > li > a {
    padding: 10px 15px;
    font-family: "Oswald", sans-serif;
    font-size: 15px;
@@ -2131,19 +2137,19 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    margin-bottom: 20px;
  }
  
- .main-menu > li > a {
+ .main-menu > li > a, .custom-ul > li > a{
    -webkit-transform: skew(-10deg);
    transform: skew(-10deg);
  }
  
- .main-menu > li > a > span {
+ .main-menu > li > a > span{
    color: #fff;
    display: block;
    -webkit-transform: skew(10deg);
    transform: skew(10deg);
  }
  
- .main-menu > li > a > span:hover {
+ .main-menu > li > a > span:hover, .custom-ul > li > a > span:hover{
    color: #fff;
  }
  
@@ -6563,7 +6569,7 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  }
  
  .kopa-tag-line-widget.style1 {
-   background: url("https://i.imgur.com/fOxi3nz.jpg") !important;
+   background: url("./images/photo_2021-05-10_16-05-24\ \(2\).jpg") !important;
    margin-top: 25px
  }
  
@@ -7856,12 +7862,16 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  
  .kopa-main-col {
    display: flex;
-   flex-direction: column-reverse;
+   flex-direction: column;
    width: 70.17544%;
    padding: 0 15px;
    float: left;
    min-height: 1px;
    position: relative;
+ }
+
+ .video-button{
+   width: 150px;
  }
  
  .sidebar {
@@ -10851,12 +10861,12 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    font-family: 'Lora', serif !important;
  }
  
- .main-menu > li > a:hover, .main-menu-2 > li > a:hover {
+ .main-menu > li > a:hover, .main-menu-2 > li > a:hover, .custom-ul > li > a:hover{
    color: #fff;
-   background-color: #06335c;
+   background-color: #f5b904;
  }
  
- .main-menu > li > a:hover span, .main-menu-2 > li > a:hover span {
+ .main-menu > li > a:hover span, .main-menu-2 > li > a:hover span, custom-ul > li > a:hover span{
    color: #fff;
  }
  
@@ -10913,15 +10923,26 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  .details-title a{
    font-size: 25px;
  }
+ .details-descr2{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+ }
  .details-descr li{
+  display:flex;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.details-descr span{
    font-size: 18px;
- }
- 
- .details-descr p{
-   font-size: 20px;
-   margin: 10px 5px;
    font-weight: bold;
- }
+   margin-left: 5px;
+}
+ .details-descr p{
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 5px;
+}
  /* .details-img{
    width: 399px;
    height: 460px;
@@ -10941,6 +10962,11 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  .card-info{
    display: flex;
    margin-left: 15px;
+ }
+
+ .card-body a {
+   display: flex;
+   word-wrap: break-word; 
  }
  
 //  .player-details-shadow{
@@ -10982,7 +11008,9 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
      display: flex;
      flex-wrap: wrap;
    }
-   
+   .footer-ul li{
+     margin-left: 5px;
+   }
  }
  
  @media all and (max-width: 968px){
@@ -11020,12 +11048,16 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
      font-size: 13px;
      margin: 0
    }
+   .details-descr2 span{
+    font-size: 13px;
+    margin: 0
+  }
    .details-descr li{
-     font-size: 12px;
+     font-size: 14px;
    }
    
  }
- .main-menu > li > a:hover, .main-menu-2 > li >a:hover{
+ .main-menu > li > a:hover, .main-menu-2 > li >a:hover, custom-ul > li > a:hover{
   color: #fff; 
   background-color: #f5b904;
 
