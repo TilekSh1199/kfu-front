@@ -2182,10 +2182,10 @@ img {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  font-size: 21px;
+  font-size: 26px;
   float: right;
   padding: 5px 10px;
-  margin: 6px 0 5px;
+  margin: 23px 0 5px;
 }
 
 .main-nav-mobile .main-menu-mobile, .bottom-nav-mobile .main-menu-mobile {
@@ -11018,6 +11018,9 @@ span {
 @media all and (max-width: 968px) {
   .kopa-header-middle {
     height: 78px !important;
+  }
+  .kopa-logo-2 {
+    height: 78px;
   }
 }
 
