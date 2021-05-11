@@ -2213,7 +2213,7 @@ img {
 
 .main-nav-mobile .main-menu-mobile > li > a, .bottom-nav-mobile .main-menu-mobile > li > a {
   color: #333333;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", sans-serif;
   text-transform: capitalize;
   font-size: 14px;
   display: block;
@@ -10862,6 +10862,10 @@ span {
   padding: 15px;
   font-size: 20px;
   margin-bottom: 15px;
+}
+
+.search-inp-div {
+  width: 30%;
 }
 
 .show-alphabet {
