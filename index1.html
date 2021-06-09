@@ -158,7 +158,7 @@
 
     <div id="main-content">
 
-        <div class="widget-area-23">
+        <div class="widget-area-23 ad-table">
 
             <div class="wrapper">
 
@@ -166,11 +166,6 @@
                     <img style="margin-bottom: 10px;"
                         src="https://openssource.biz/st2/tiktok.gif.pagespeed.ce.102rdIkg4Y.gif" alt="">
                     <img src="https://openssource.biz//st2/xbmn1.png.pagespeed.ic.uFTd-S0p1L.webp" alt="">
-                    <span></span>
-                    <!-- <div class="widget-content">
-                        <h2 class="tag-heading"></h2>
-                        <p></p>
-                    </div> -->
                 </div>
 
 
@@ -180,8 +175,44 @@
 
         <div class="wrapper mb-30">
 
-            <div class="widget-area-1">
+            <div class="widget-area-1 choose-bar">
+                <span>Страна:</span>
+                <span>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Выбрать страну</option>
+                        <option value="1">Кыргызстан</option>
+                        <option value="2">Россия</option>
+                        <option value="3">Англия</option>
+                    </select>
+                </span>
 
+                <span>Категория:</span>
+                <span>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Выбрать категорию</option>
+                        <option value="1">Пляжный футбол</option>
+                        <option value="2">Женский футбол</option>
+                        <option value="3">Мужской футбол</option>
+                    </select>
+                </span>
+                <span>Чемпионат:</span>
+                <span>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Выбрать чемпионат</option>
+                        <option value="1">Ла Лига</option>
+                        <option value="2">АПЛ</option>
+                        <option value="3">Бундеслига</option>
+                    </select>
+                </span>
+                <span>Сезон:</span>
+                <span>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Выбрать сезон</option>
+                        <option value="1">2020/2021</option>
+                        <option value="2">2019/2020</option>
+                        <option value="3">2018/2019</option>
+                    </select>
+                </span>
             </div>
             <!-- widget-area-1 -->
 
@@ -199,13 +230,13 @@
                                 <a href="#"><img src="https://www.fcbarcelonanoticias.com/uploads/s1/11/88/16/6/copa-del-rey-rfef.jpeg?mrf-size=m" alt=""></a>
                                 <!-- <label for="cars">Выбрать чемпионат:</label> -->
 
-                                <select name="cars" id="cars">
+                                <!-- <select name="cars" id="cars">
                                   <option value="volvo">Выбрать чемпионат</option>
                                   <option value="volvo">КПЛ</option>
                                   <option value="saab">АФЛ</option>
                                   <option value="mercedes">Кубок КР</option>
                                   <option value="audi">Женский чемпионат</option>
-                                </select>
+                                </select> -->
                             </div>
                             <div class="entry-content">
                                 <div class="content-top">
@@ -216,150 +247,166 @@
                         </article>
                     </div>
                 </div>
-                <div class="kopa-main-col">
+                <div class="kopa-main-col tournament-table">
                     <div class="widget-area-2">
                     </div>
                     <div class="widget-area-5 player-details-shadow">
                     </div>
                     <h1 style="text-align: center">Первая лига КР</h1>
-                    <table class="table table-bordered">
-                        <thead>
+                    <table class="table table-bordered main-table-cup-index1">
+                        <thead class="thead-span">
                           <tr>
                             <th scope="col"></th>
                             <th scope="col">Команда</th>
-                            <th class="text-center" scope="col">И</th>
-                            <th class="text-center" scope="col">В</th>
-                            <th class="text-center" scope="col">П</th>
-                            <th class="text-center" scope="col">Н</th>
-                            <th class="text-center" scope="col">О</th>
+                            <th class="text-center" scope="col"><span>Игры<img style="width: 15px; height:15px;"src="./images/icons/slide.svg" alt=""></span> <span class="d-none">И <img class="arrow-img-mob" style="width: 15px; height:15px;"src="./images/icons/slide.svg" alt=""></span> </th>
+                            <th class="text-center" scope="col"><span>Выигрыши<img style="width: 15px; height:15px;"src="./images/icons/slide.svg" alt=""></span> <span class="d-none">В<img class="arrow-img-mob" style="width: 15px; height:15px;"src="./images/icons/slide.svg" alt=""></span></th>
+                            <th class="text-center" scope="col"><span>Ничьи<img style="width: 15px; height:15px;"src="./images/icons/slide.svg" alt=""></span> <span class="d-none">Н <img class="arrow-img-mob" style="width: 15px; height:15px;"src="./images/icons/slide.svg" alt=""></span></th>
+                            <th class="text-center" scope="col"><span>Проигрыши<img style="width: 15px; height:15px;"src="./images/icons/slide.svg" alt=""></span> <span class="d-none">П <img class="arrow-img-mob" style="width: 15px; height:15px;"src="./images/icons/slide.svg" alt=""></span></th>
+                            <th class="text-center" scope="col"><span>Очки <img style="width: 15px; height:15px;"src="./images/icons/slide.svg" alt=""></span> <span class="d-none">О <img class="arrow-img-mob" style="width: 15px; height:15px;"src="./images/icons/slide.svg" alt=""></span></th>
+                            <th class="text-center" scope="col"> <span>РМ <img style="width: 20px; height:20px;"src="./images/icons/slide.svg" alt=""></span>  <span class="d-none">РМ <img class="arrow-img-mob" style="width: 15px; height:15px;"src="./images/icons/slide.svg" alt=""></span></th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="table-cup-tbody">
                           <tr>
-                            <th class="text-center" style="width: 5%; background-color: #7fd498" scope="row">1</th>
-                            <td> <img class="club-icon" src="./images/icons/kyrgyzstan.svg" alt=""> Дордой</td>
-                            <td class="text-center" style="width: 5%">35</td>
-                            <td class="text-center" style="width: 5%">25</td>
-                            <td class="text-center" style="width: 5%">3</td>
-                            <td class="text-center" style="width: 5%">4</td>
-                            <td class="text-center" style="width: 5%">79</td>
+                            <th class="text-center" style="width: 5%;" scope="row">1</th>
+                            <td> <img class="club-icon-table" src="./images/icons/kyrgyzstan.svg" alt=""> Дордой</td>
+                            <td class="text-center table-td-cup" style="width: 12%">35</td>
+                            <td class="text-center table-td-cup" style="width: 12%">25</td>
+                            <td class="text-center table-td-cup" style="width: 12%">3</td>
+                            <td class="text-center table-td-cup" style="width: 12%">4</td>
+                            <td class="text-center table-td-cup" style="width: 12%">79</td>
+                            <td class="text-center table-td-cup" style="width: 12%">+23</td>
                           </tr>
                           <tr>
-                            <th class="text-center" style="background-color: #7fd498"  scope="row">2</th>
-                            <td> <img class="club-icon" src="./images/icons/kyrgyzstan.svg"alt=""> Алга</td>
+                            <th class="text-center"  scope="row">2</th>
+                            <td> <img class="club-icon-table" src="./images/icons/kyrgyzstan.svg"alt=""> Алга</td>
                             <td class="text-center" >35</td>
                             <td class="text-center">25</td>
                             <td class="text-center">4</td>
                             <td class="text-center">3</td>
                             <td class="text-center">78</td>
+                            <td class="text-center">+23</td>
                           </tr>
                           <tr>
-                            <th class="text-center" style="background-color: #7fd498" scope="row">3</th>
-                            <td> <img class="club-icon" src="./images/icons/kyrgyzstan.svg" alt=""> Абдыш-Ата</td>
+                            <th class="text-center" scope="row">3</th>
+                            <td> <img class="club-icon-table" src="./images/icons/kyrgyzstan.svg" alt=""> Абдыш-Ата</td>
                             <td class="text-center">35</td>
                             <td class="text-center">24</td>
                             <td class="text-center">5</td>
                             <td class="text-center">5</td>
                             <td class="text-center">77</td>
+                            <td class="text-center">+23</td>
                           </tr>
                           <tr>
                             <th class="text-center" scope="row">4</th>
-                            <td> <img class="club-icon" src="./images/icons/kyrgyzstan.svg" alt="">Алай</td>
+                            <td> <img class="club-icon-table" src="./images/icons/kyrgyzstan.svg" alt="">Алай</td>
                             <td class="text-center">35</td>
                             <td class="text-center">24</td>
                             <td class="text-center">5</td>
                             <td class="text-center">5</td>
                             <td class="text-center">77</td>
+                            <td class="text-center">+23</td>
                           </tr>
                           <tr>
                             <th class="text-center" scope="row">5</th>
-                            <td> <img class="club-icon" src="./images/icons/kyrgyzstan.svg" alt="">Илбирс</td>
+                            <td> <img class="club-icon-table" src="./images/icons/kyrgyzstan.svg" alt="">Илбирс</td>
                             <td class="text-center">35</td>
                             <td class="text-center">24</td>
                             <td class="text-center">5</td>
                             <td class="text-center">5</td>
                             <td class="text-center">77</td>
+                            <td class="text-center">+23</td>
                           </tr>
                           <tr>
                             <th class="text-center" scope="row">6</th>
-                            <td> <img class="club-icon" src="./images/icons/kyrgyzstan.svg" alt="">Алга</td>
+                            <td> <img class="club-icon-table" src="./images/icons/kyrgyzstan.svg" alt="">Алга</td>
                             <td class="text-center">35</td>
                             <td class="text-center">24</td>
                             <td class="text-center">5</td>
                             <td class="text-center">5</td>
                             <td class="text-center">77</td>
+                            <td class="text-center">+23</td>
                           </tr>
                           <tr>
                             <th class="text-center" scope="row">7</th>
-                            <td> <img class="club-icon" src="./images/icons/kyrgyzstan.svg" alt="">Невчи</td>
+                            <td> <img class="club-icon-table" src="./images/icons/kyrgyzstan.svg" alt="">Невчи</td>
                             <td class="text-center">35</td>
                             <td class="text-center">24</td>
                             <td class="text-center">5</td>
                             <td class="text-center">5</td>
                             <td class="text-center">77</td>
+                            <td class="text-center">+23</td>
                           </tr>
                           <tr>
                             <th class="text-center" scope="row">8</th>
-                            <td> <img class="club-icon" src="./images/icons/kyrgyzstan.svg"alt="">ФК Кара-Балта</td>
+                            <td> <img class="club-icon-table" src="./images/icons/kyrgyzstan.svg"alt="">ФК Кара-Балта</td>
                             <td class="text-center">35</td>
                             <td class="text-center">24</td>
                             <td class="text-center">5</td>
                             <td class="text-center">5</td>
                             <td class="text-center">77</td>
+                            <td class="text-center">+23</td>
                           </tr>
                           <tr>
                             <th class="text-center" scope="row">9</th>
-                            <td> <img class="club-icon" src="./images/icons/kyrgyzstan.svg" alt="">ФК Талас</td>
+                            <td> <img class="club-icon-table" src="./images/icons/kyrgyzstan.svg" alt="">ФК Талас</td>
                             <td class="text-center">35</td>
                             <td class="text-center">24</td>
                             <td class="text-center">5</td>
                             <td class="text-center">5</td>
                             <td class="text-center">77</td>
+                            <td class="text-center">+23</td>
                           </tr>
                           <tr>
                             <th class="text-center" scope="row">10</th>
-                            <td> <img class="club-icon" src="./images/icons/kyrgyzstan.svg" alt="">ФК Ош</td>
+                            <td> <img class="club-icon-table" src="./images/icons/kyrgyzstan.svg" alt="">ФК Ош</td>
                             <td class="text-center">35</td>
                             <td class="text-center">24</td>
                             <td class="text-center">5</td>
                             <td class="text-center">5</td>
                             <td class="text-center">77</td>
+                            <td class="text-center">+23</td>
                           </tr>
                           <tr>
                             <th class="text-center" scope="row">11</th>
-                            <td> <img class="club-icon" src="./images/icons/kyrgyzstan.svg" alt="">Эрем</td>
+                            <td> <img class="club-icon-table" src="./images/icons/kyrgyzstan.svg" alt="">Эрем</td>
                             <td class="text-center">35</td>
                             <td class="text-center">24</td>
                             <td class="text-center">5</td>
                             <td class="text-center">5</td>
                             <td class="text-center">77</td>
+                            <td class="text-center">+23</td>
                           </tr>
                           <tr>
                             <th class="text-center"  scope="row">12</th>
-                            <td> <img class="club-icon" src="./images/icons/kyrgyzstan.svg" alt="">Таймурас</td>
+                            <td> <img class="club-icon-table" src="./images/icons/kyrgyzstan.svg" alt="">Таймурас</td>
                             <td class="text-center">35</td>
                             <td class="text-center">24</td>
                             <td class="text-center">5</td>
                             <td class="text-center">5</td>
                             <td class="text-center">77</td>
+                            <td class="text-center">+23</td>
                           </tr>
                           <tr>
                             <th class="text-center" scope="row">13</th>
-                            <td> <img class="club-icon" src="./images/icons/kyrgyzstan.svg" alt="">Беги</td>
+                            <td> <img class="club-icon-table" src="./images/icons/kyrgyzstan.svg" alt="">Беги</td>
                             <td class="text-center">35</td>
                             <td class="text-center">24</td>
                             <td class="text-center">5</td>
                             <td class="text-center">5</td>
                             <td class="text-center">77</td>
+                            <td class="text-center">+23</td>
                           </tr>
                         </tbody>
                       </table>
                       <div class="letter-meanings">
                           <p><span>И</span> - игры,</p>
                           <p><span>В</span> - выигрыши,</p>
-                          <p><span>П</span> -проигрыши,</p>
                           <p><span>Н</span> - ничьи,</p>
-                          <p><span>О</span> - очки</p>
+                          <p><span>П</span> -проигрыши,</p>
+                          <p><span>О</span> - очки,</p>
+                          <p><span>РМ</span> - разница мячей</p>
+
                       </div>
                     <!-- <div class="widget-area-5 player-details-shadow">
                         <div class="widget kopa-article-list-widget article-list-4">
@@ -448,11 +495,11 @@
 
                 <!-- main-col -->
 
-                    <div class="sidebar widget-area-11">
-                        <div class="widget kopa-ads-widget">
+                    <!-- <div class="sidebar widget-area-11"> -->
+                        <!-- <div class="widget kopa-ads-widget">
                             <a href="#"><img src="https://data.kaktus.media/image/big/2020-06-15_16-46-15_272273.jpg"
                                     alt="Для рекламы"></a>
-                        </div>
+                        </div> -->
                     <!-- <div class="widget kopa-point-widget">
                         <h3 class="widget-title style5">ТУРНИРНАЯ ТАБЛИЦА</h3>
                         <ul class="clearfix">
@@ -516,7 +563,7 @@
                     </div> -->
 
 
-                </div>
+                <!-- </div> -->
                 <!-- sidebar -->
 
             </div>

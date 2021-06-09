@@ -187,6 +187,10 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    font-style: normal;
  }
  
+ // body{
+ //   background-image: url('https://tpc.googlesyndication.com/simgad/2926652725086174100?') !important;
+ // }
+ 
  .element-wrap,
  .pricing-table,
  .social-links,
@@ -1702,10 +1706,39 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    }
  }
  
+ .table-cup-tbody td{
+   font-size: 14px;
+   @media all and (max-width:979px){
+     font-size: 12px;
+   }
+   @media all and (max-width:479px){
+     font-size: 10px;
+   }
+ }
+ 
+ .table-cup-tbody th{
+   font-size: 14px;
+   @media all and (max-width:979px){
+     font-size: 12px;
+   }
+   @media all and (max-width:479px){
+     font-size: 10px;
+   }
+ }
  .club-icon {
-   margin-right: 10px;
+   margin-right: 3px;
    width: 25px;
    height: 25px;
+ }
+ 
+ .club-icon-table{
+   margin-right: 3px;
+   width: 25px;
+   height: 25px;
+ 
+   @media all and (max-width:479px){
+     width: 15px;
+   }
  }
  .club-icon1 {
    margin-right: 5px;
@@ -1965,7 +1998,22 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  }
  
  body {
-   background: #fff;
+   // background: #fff;
+   // background-size: contain !important;
+   font-family: "Arimo", sans-serif;
+   color: #000;
+   font-size: 13px;
+   line-height: 22px;
+   overflow: hidden;
+ }
+ .main-page-body1 {
+   // background: #fff;
+   background-image: url('https://tpc.googlesyndication.com/simgad/2397406821959328112') !important;
+   background-attachment: fixed;
+     // background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover !important;
+   // background-size: contain !important;
    font-family: "Arimo", sans-serif;
    color: #000;
    font-size: 13px;
@@ -2009,6 +2057,11 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  
  .wrapper.mb-30 {
    margin-bottom: 30px;
+ }
+ 
+ .b-white{ 
+   background: #fff;
+   margin-top: 165px;
  }
  
  .loading {
@@ -2388,7 +2441,7 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    position: unset !important;
  }
  .kopa-logo-2 {
-   width: 40%;
+   width: 38%;
    height: 100%;
    position: absolute;
    background: linear-gradient(
@@ -2434,7 +2487,7 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
      //   transform:  skewX(-45deg);
    }
    @media all and (max-width: 1870px) {
-     width: 30%;
+     width: 27%;
    }
    @media all and (max-width: 1430px) {
      width: 16%;
@@ -4725,16 +4778,16 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  }
  
  #main-content {
-   background: #fff;
+   // background: #fff;
  }
  
  #main-content > .wrapper:last-child {
-   background: #fff;
+   // background: #fff;
    padding-bottom: 30px;
  }
  
  #main-content .widget {
-   background: #fff;
+   // background: #fff;
  }
  
  /*--- Kopa newsletter widget ---*/
@@ -6538,7 +6591,7 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  }
  
  .article-list-3 .latest-item .entry-thumb {
-   width: 165px;
+   // width: 165px;
    margin-right: 15px;
    float: left;
  }
@@ -6556,10 +6609,10 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    color: #fff;
  
    @media all and (max-width: 479px) {
-     width: 276px !important;
+     width: 258px !important;
    }
    @media all and (max-width: 359px) {
-     width: 276px !important;
+     width: 220px !important;
    }
  }
  
@@ -6630,6 +6683,7 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  
  .article-list-4 > ul > li:first-child {
    margin-top: 0;
+ 
  }
  
  .article-list-4 .entry-item .entry-thumb {
@@ -6642,6 +6696,14 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    width: 25.05263%;
    margin-right: 10px;
    float: left;
+ 
+ @media all and (max-width: 639px){
+   width: 38.05263%;
+ }
+   @media all and (max-width: 480px){
+     width: 100%;
+     text-align: center;
+   }
  }
  
  .article-list-4 .entry-item .entry-content {
@@ -9092,6 +9154,21 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    margin-bottom: 0 !important;
  }
  
+ .widget-area-1{
+   display: flex;
+   justify-content: space-evenly;
+   font-size: 18px;
+   align-items: center;
+ 
+   @media all and (max-width: 1000px){
+     flex-direction: column;
+ 
+     & span{
+       margin: 10px;
+     }
+   }
+ }
+ 
  .widget-area-12,
  .widget-area-wrap {
    width: 64.03509%;
@@ -9195,6 +9272,9 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  
    &:hover {
      color: #f0ad4e;
+   }
+   @media all and (max-width: 640px){
+     width: 50%;
    }
  }
  
@@ -12905,13 +12985,10 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
      bottom: -14%;
    }
  
-   .course-table-pagination-block-phone {
-     display: flex !important;
-   }
- 
    .course-table-pagination-block {
      display: none !important;
    }
+ 
  }
  
  @media screen and (max-width: 479px) {
@@ -13148,6 +13225,32 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  
    .course-table-pagination-block button {
      padding: 1px;
+   }
+   
+   .table-desktop-match-center {
+     display: none;
+   }
+   .table-device-match-center{
+     display: block !important;
+   }
+ 
+   .main-table-cup-index1 th{
+     padding: 3px !important;
+   }
+   .main-table-cup-index1 td{
+     padding: 3px !important;
+   }
+ 
+   .events-block table tbody tr td.penalty:nth-child(1) span:nth-child(2) {
+     width: 5% !important;
+   }
+ 
+   .events-block table tbody tr td.left:nth-child(1) span:nth-child(3) {
+     width: 10% !important;
+   }
+ 
+   .events-block table tbody tr td.penalty:nth-child(1) img {
+     display: none !important;
    }
  }
  
@@ -13393,6 +13496,13 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    justify-content: space-evenly;
  }
  
+ .choose-bar select{
+   border-radius: 2px;
+   background-color: #06355c;
+   color: #fff;
+   padding: 3px;
+ }
+ 
  .title-and-sort-block div select {
    height: min-content;
  }
@@ -13460,7 +13570,6 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  .details-descr span {
    font-size: 17px;
    font-weight: bold;
-   margin-left: 5px;
    width: 50%;
    text-align: start;
  }
@@ -13632,6 +13741,7 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    }
  }
  
+ 
  // Askat styles code start
  
  .d-flex {
@@ -13644,6 +13754,10 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  
  .d-block {
    display: block !important;
+ }
+ 
+ .d-none{
+   display: none !important;
  }
  
  .justify-between {
@@ -13699,6 +13813,10 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  }
  .details-descr2 ul {
    width: 80%;
+ }
+ 
+ .tournament-table{
+   width: 100%;
  }
  
  .search-title-h4 {
@@ -13824,9 +13942,9 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  
  .course-table-pagination-block-phone {
    position: absolute;
-   top: 105px;
+   top: 30px;
    right: 15px;
-   display: none;
+   display: flex;
  }
  
  .course-table-pagination-block-phone button {
@@ -13882,10 +14000,12 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  
  #container { 
    overflow: auto;
-   width: 800px; 
-   height: 600px; 
-   float: left; 
+   width: 100%; 
+   height: 1110px; 
+   display: flex;
+   justify-content: center;
    padding: 10px;
+   margin-bottom: 40px;
    @media all and (max-width:875px){
      overflow: auto;
    }
@@ -13896,9 +14016,20 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  }
  
  section {
-   width: 130px; 
+   width: 180px; 
    height: 520px; 
    float: left;
+ 
+   @media all and (max-width: 1160px){
+     width: 150px;
+   }
+   @media all and (max-width: 1027px){
+     width: 126px;
+   }
+   @media all and (max-width: 980px){
+     width: 80%;
+     text-align: center;
+   }
  }
  
  section > div { 
@@ -13909,10 +14040,18 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    background: #06355c; 
    color: white; 
    padding: 10px 10px 10px 20px;
+   display: flex;
+   justify-content: space-between;
  }
  
  section > span{
    text-align: end;
+ }
+
+ section > div:nth-child(1){
+  @media all and (max-width: 980px){
+    margin-top: 37px;
+  }
  }
  section > div:nth-child(2n) { 
    margin-bottom: 40px;
@@ -13951,9 +14090,19 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    margin-top: 55px; 
  }
  
+ 
+ #quarterFinals{
+   @media all and (max-width:980px){
+     display: none;
+   }
+ }
  #quarterFinals > div { 
    margin-top: 93px; 
    height: 44px;
+ 
+   @media all and (max-width: 979px){
+     margin-top: 0px;
+   }
  }
  
  #quarterFinals > div:first-child { 
@@ -13976,12 +14125,26 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  #line2 div:first-child { 
    margin-top: 125px; 
  }
+ 
+ #semiFinals{
+   @media all and (max-width:980px){
+     display: none;
+   }
+ }
  #semiFinals > div { 
    margin-top: 227px; 
    height: 44px;
+ 
+   @media all and (max-width: 979px){
+     margin-top: 0px;
+   }
  }
  #semiFinals > div:first-child { 
    margin-top: 105px; 
+ 
+   @media all and (max-width: 979px){
+     margin-top: 40px;
+   }
  }
  #conn3 div:nth-child(1) { 
    margin-top: 129px; 
@@ -14001,15 +14164,30 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    margin-top: 517px; 
  }
  
+ #final {
+   @media all and (max-width:980px){
+     display: none;
+   }
+ }
+ 
  #final > div:nth-child(1) { 
    margin-top: 250px; 
    height: 44px;
+ 
+   @media all and (max-width: 979px){
+     margin-top:40px;
+   }
  }
  
  #final > div:nth-child(2) { 
    margin-top: 477px; 
    height: 44px;
+ 
+   @media all and (max-width: 979px){
+     margin-top: 0px !important;
+   }
  }
+ 
  
  #conn4 div{
    margin-top: 270px;
@@ -14019,11 +14197,21 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  #line4 div{
    margin-top: 540px;
  }
+ 
+ #super-final {
+   @media all and (max-width:980px){
+     display: none;
+   }
+ }
  #super-final > div{
-   margin-top: 0px;
+   margin-top: 519px;
    height: 44px;
-   margin-left: 760px;
+   // margin-left: 760px;
    width: 130px;
+   @media all and (max-width: 979px){
+     margin-top: 40px;
+     width: 80%;
+   }
  }
  
  .champ-cup{
@@ -14038,10 +14226,56 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    color: #fff;
  }
  
+ @media all and (max-width:980px){
+   .connecter, .line{
+     display: none !important;
+   }
+ }
+ 
+ 
+ .draw-buttons{ 
+   width: 100%;
+   display: none;
+ 
+   & button{
+     background: #06355c;
+     font-family: "Arimo", sans-serif;
+     color: #fff;
+     border: none;
+     padding: 5px;
+     width: 80px;
+     margin: 5px;
+ 
+     &:hover{
+       color: #f0ad4e;
+       transition: 0.3s;
+     }
+   }
+ 
+   @media all and (max-width:980px){
+     display: block;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     margin: 10px;
+   }
+ }
+ 
+ .cup-title-round{
+   text-align: center;
+   display: none;
+ }
+ 
+ // .round1-8{
+ //   display: block;
+ // }
  // input type date css start
  
  .club-logo-table {
-   width: 290px !important;
+   width: 290px;
+   @media all and (max-width:359px){
+     width: 100% !important;
+   }
  }
  
  .club-logo-table a img{
@@ -14049,7 +14283,7 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
      height: 158px !important;
    }
    @media all and (max-width:480px){
-     width: 95%;
+     width: 100%;
    }
  }
  .input-type-date {
@@ -14136,9 +14370,20 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    padding: 5px 0;
  }
  
- .match-center-block {
-   min-width: 440px;
-   overflow: auto;
+ .table-device-match-center {
+   display: none;
+ }
+ 
+ .table-device-match-center tbody tr td:nth-child(2) {
+   text-align: left !important;
+ }
+ 
+ .table-device-match-center tbody tr td:nth-child(3) {
+   width: 10% !important;
+ }
+ 
+ .table-device-match-center p {
+   margin: 0;
  }
  
  .match-center-block h5{
@@ -14259,7 +14504,7 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  }
  
  .events-block table tbody tr td.left:nth-child(1) span:nth-child(3) {
-   width: 5%;
+   width: 7%;
  }
  
  // 
@@ -14367,8 +14612,22 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    border-bottom: 1px solid #fff;
  }
  
+ .match-center-select {
+   height: 40px;
+ }
+ 
+ @media all and (max-width: 979px){
+   .thead-span span:nth-child(1){
+     display: none;
+   }
+ 
+   .thead-span span:nth-child(2){
+     display: block !important;
+   }
+ }
+ 
  @media all and (max-width: 640px) {
-   .widget-area-23 {
+   .ad-table {
      display: none;
    }
    .search-player-box div {
@@ -14383,23 +14642,76 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    .modal-content1 {
      width: 70%;
    }
+   .thead-span span:nth-child(2){
+     font-size: 11px;
+   }
+   .course-table-pagination-block-phone {
+     top: 83px;
+   }
+ 
+   .match-center-select:nth-child(3) {
+     margin-top: 10px;
+     width: 143px;
+   }
+ }
+ 
+ 
+ // @media all and (max-width:530px){
+ //   .thead-span span:nth-child(1){
+ //     display: none;
+ //   }
+ 
+ //   .thead-span span:nth-child(2){
+ //     display: block !important;
+ //   }
+ // }
+ @media all and (max-width: 479px) {
+   .arrow-img-mob{
+     width: 10px !important;
+     height: 10px !important;
+   }
  }
  
  @media all and (max-width: 430px) {
    .auth-h3 {
      font-size: 17px;
    }
- }
  
  @media all and (max-width: 375px) {
    .modal-content1 {
      width: 80%;
    }
+ 
+   .thead-span span:nth-child(2){
+     font-size: 9px;
+   }
+ 
  }
  
  @media all and (max-width: 1281px) and (min-width: 1160px) {
    #red-block-left {
      width: 10%;
+     }
+   }
+ }
+ 
+ @media all and (max-width: 359px) {
+   .match-detail-table tbody tr td:nth-child(1){
+     padding: 0; 
+   }
+   .match-detail-table tbody tr td:nth-child(2){
+     padding: 0; 
+   }
+   .match-detail-table tbody tr td:nth-child(3){
+     padding: 0; 
+   }
+   .course-table-pagination-block-phone {
+     top: 133px;
+   }
+ 
+   .match-center-select:nth-child(2) {
+     margin-top: 10px;
+     width: 143px;
    }
  }
  // Askat styles code end
