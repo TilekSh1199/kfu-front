@@ -581,7 +581,7 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  
  a:hover,
  a:active {
-   color: #f0ad4e !important;
+  //  color: #f0ad4e !important;
    text-decoration: none;
  }
  
@@ -13498,8 +13498,8 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  
  .choose-bar select{
    border-radius: 2px;
-   background-color: #06355c;
-   color: #fff;
+   background-color: #fff;
+   color: #000;
    padding: 3px;
  }
  
