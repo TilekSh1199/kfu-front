@@ -581,7 +581,7 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  
  a:hover,
  a:active {
-  //  color: #f0ad4e !important;
+   // color: #f0ad4e !important;
    text-decoration: none;
  }
  
@@ -2007,19 +2007,23 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    overflow: hidden;
  }
  .main-page-body1 {
-   // background: #fff;
-   background-image: url('https://tpc.googlesyndication.com/simgad/2397406821959328112') !important;
-   background-attachment: fixed;
-     // background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover !important;
-   // background-size: contain !important;
    font-family: "Arimo", sans-serif;
    color: #000;
    font-size: 13px;
    line-height: 22px;
    overflow: hidden;
  }
+ 
+ #pari{
+   // background: #fff;
+   background-image: url('https://i.ytimg.com/vi/BcoEV1fnnCE/maxresdefault.jpg') !important;
+   background-attachment: fixed;
+   // background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover !important;
+   padding-top: 50px;
+ }
+ 
  
  .mb-5 {
    margin-bottom: 5px;
@@ -6103,7 +6107,7 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  }
  
  .content-top .entry-title {
-   font-size: 23px;
+   font-size: 21px;
    line-height: 26px;
    margin-right: 10px;
    font-weight: 500;
@@ -9178,7 +9182,7 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    position: relative;
  }
  .entry-item .entry-content > p {
-   font-size: 20px;
+   font-size: 18px;
    margin-top: 30px;
  
    @media all and (max-width: 768px) {
@@ -13500,7 +13504,8 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    border-radius: 2px;
    background-color: #fff;
    color: #000;
-   padding: 3px;
+   padding: 8px;
+   opacity: 0.6;
  }
  
  .title-and-sort-block div select {
@@ -13944,10 +13949,22 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    position: absolute;
    top: 30px;
    right: 15px;
-   display: flex;
+   display: none;
  }
  
  .course-table-pagination-block-phone button {
+   background: transparent;
+   border: none;
+ }
+ 
+ .match-center-table-pagination-block-phone {
+   display: flex;
+   position: absolute;
+   top: 30px;
+   right: 15px;
+ }
+ 
+ .match-center-table-pagination-block-phone button {
    background: transparent;
    border: none;
  }
@@ -14047,12 +14064,12 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
  section > span{
    text-align: end;
  }
-
+ 
  section > div:nth-child(1){
-  @media all and (max-width: 980px){
-    margin-top: 37px;
+   @media all and (max-width: 980px){
+     margin-top: 37px;
+   }
   }
- }
  section > div:nth-child(2n) { 
    margin-bottom: 40px;
  }
@@ -14291,7 +14308,7 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
    position: relative;
    padding: 0.5rem 3.5rem 1rem 0.5rem;
    text-align: center;
-   font-size: 1.5rem;
+   font-size: 1.3rem;
    font-family: monospace;
  
    border: 1px solid #8292a2;
@@ -14646,11 +14663,16 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
      font-size: 11px;
    }
    .course-table-pagination-block-phone {
-     top: 83px;
+     top: 75px;
+     display: flex;
    }
  
+   .match-center-table-pagination-block-phone {
+     top: 75px;
+   }
+   
    .match-center-select:nth-child(3) {
-     margin-top: 10px;
+     margin-top: 10px !important;
      width: 143px;
    }
  }
@@ -14706,7 +14728,11 @@ Tags: light, one-column, two-columns, right-sidebar, fluid-layout, custom-header
      padding: 0; 
    }
    .course-table-pagination-block-phone {
-     top: 133px;
+     // top: 133px;
+   }
+ 
+   .match-center-table-pagination-block-phone{
+     top: 125px;
    }
  
    .match-center-select:nth-child(2) {
